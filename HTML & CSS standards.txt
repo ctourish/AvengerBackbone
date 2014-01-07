@@ -1,0 +1,51 @@
+HTML & CSS standards
+_____________________________________________________________________
+
+HTML:
+
+- Use html5 syntax
+- ID's where occurence is unique
+- CLASS's for everything else
+- divide the html page into sections (header, footer....)
+- leave TODO comment where work not completed
+- put CSS link in header
+- indent at all times (tab = 4 x spaces)
+	<div>
+		<p>sdfsfd</p>
+	</div>
+- use lowercase at all times
+- put javascript ref to bottom of page
+- separate css from html
+- put alt tag in all <img> elements
+- put title in <a> elements
+- STOP SUPPORTING IE......
+- use full range of <h> tags
+- make list if IE fixes/things to avoid etc
+
+
+
+
+
+
+CSS: 
+
+- Use the SMACSS 5 categories (Base, Layout, Module, State, Theme)
+- minimise depth (i.e. body #header #nav li )
+- use child selectors
+- don't use !important unless absolutely required
+- class & id's named using hyphen e.g.
+	.ui
+	.ui-dialog
+	.ui-dialog-title
+
+	- keep them short & consistent
+	- should be relative to use
+	- ask will it be used somewhere else
+- put each piece of styling on new line
+- grouping of properties? 
+- remove unused CSS
+- use 6 hex characters for colours (#ffffff)
+- useful to group certain css in style sheet, and comment with description
+- sprites
+- implement a grid system
+- responsive design should be considered

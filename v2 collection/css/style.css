@@ -1,0 +1,30 @@
+
+/* spacing of divs styled in bootsrap.css */
+
+.avenger-bio {
+
+}
+
+.avenger-bio .avenger-pic {
+	background-image: url('../img/profilePlaceholder.png');
+	background-repeat: no-repeat;
+	height: 164px;
+	margin-top: 20px;
+	background-position: 50px;
+}
+
+.avenger-bio .avenger-pic img {
+	height: 164px;
+	margin-top: 0px;
+	margin-left: 50px;
+}
+
+.avenger-bio .avenger-description {
+	color: #000000;
+}
+
+.avenger-bio .avenger-description h2 {
+	color: #008000;
+	font-size: 40px;
+	margin-top: 20px;
+}	

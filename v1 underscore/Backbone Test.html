@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Avengers Assemble</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<style>
+	h1 { margin-bottom: 20px; }
+	li { margin-bottom: 10px; }
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<h1>Avengers Assemble</h1>
+	<ol>
+		<li><del>
+				Setup a HTML page with all the libraries required to run a Backbone.js and Handlebars. <br />
+				You can use this page if you want.</del></li>	
+		<li><del>Create a Model called <strong>Avenger</strong> with the following values: Name, Powers, Picture.</del></li>
+		<li><del>Create an instance of the Avenger Model with your favourite Avengers character. <br />
+					Ex: Name: Hulk; Powers: Transformation, Superhuman Strength, Superhuman Leaping Ability, etc; PictureUrl: hulk.jpg <br />
+					You can pick other heroes <a href="http://marvel.wikia.com/">in here</a>. 
+		</li>
+		<li><del>Write the HTML/CSS code for the attached image using a modular approach.</del></li>
+		<li><del>Using the HTML created, create a Handlebar Template with the Model attributes.</del></li>
+		<li><del>Create a view named Avanger with a render method and a reference to the Handlebar template.</del></li>
+		<li><del>Create an instance of the Avenger View loading your Avenger Model and render in the page.</del></li>
+	</ol>
+
+	<hr>
+
+<!-- hard coded html avenger -->
+	<div class="avenger-bio row">
+		<div class="avenger-pic span3"><img src="img/hulkProfile.png"></div>
+		<div class="avenger-description span6">
+			<h2>Hulk - v Hardcoded</h2>
+			<strong>Powers:</strong><br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, voluptates placeat iure quisquam id. Fugiat, nesciunt, a, expedita dicta esse explicabo tempore vero optio et delectus odio sequi maiores consequuntur nihil eum itaque praesentium. Neque, consectetu</p>
+		</div>
+	</div>
+
+	<hr>
+
+<!-- div to contain content from handlbar template -->
+	<div id="avengerContainer"></div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/handlebars-1.0.rc.1.min.js"></script>
+<script type="text/javascript" src="js/underscore.js"></script>
+<script type="text/javascript" src="js/backbone.js"></script>
+
+<script id="avenger-template" type="x-handlebars-template">
+	<div class="avenger-bio row">
+		<div class="avenger-pic span3"><img src="<%= picture %>"/></div>
+		<div class="avenger-description span6">
+			<h2><%= name %></h2>
+			<strong>Powers:</strong><br>
+			<p><%= powers%></p> {{ powers }}
+		</div>
+	</div>
+</script>
+
+<script type="text/javascript" src="js/avenger.js"></script>
+
+</body>
+</html>
